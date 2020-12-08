@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- links -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js"></script>
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            <h4>Caly's Blog</h4>
+            <br><br>
+            <input type="button" value="back" onclick="history.back()"/> 
+            <br>
+            </div>
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-9">
+                <h2>Markdown Cheatsheet</h2>
+                <h5>How to format Markdown for Jupyter, GitHub, etc. </h5>
+                <h5>Dec, 2020</h5>
+                <!-- <div class="fakeimg">Fake Image</div> -->
+                <article>
+                    <h2 id="markdown-syntax-for-text">Markdown Syntax for Text</h2>
+                    <pre><code>
+                    # H1
+                    ## H2
+                    ### H3
+                    #### H4
+                    ##### H5
+                    ###### H6
+                    </code></pre>
+                    <h1 id="h1">H1</h1>
+                    <h2 id="h2">H2</h2>
+                    <h3 id="h3">H3</h3>
+                    <h4 id="h4">H4</h4>
+                    <h5 id="h5">H5</h5>
+                    <h6 id="h6">H6</h6>
+                    <pre><code>Emphasis/italics:
+
+                    <span class="hljs-keyword">with</span> *asterisks* <span class="hljs-keyword">or</span>
+
+                    _underscores_ (<span class="hljs-built_in">single</span> underscore)
+                    Emphasis/italics:
+                    </code></pre><p>with <em>asterisks</em> or</p>
+                    <p><em>underscores</em> (single underscore)
+                    Strong emphasis/bold:</p>
+                    <pre><code><span class="hljs-keyword">with</span> **asterisks** <span class="hljs-keyword">or</span>
+                    __underscores__
+                    <span class="hljs-keyword">Strong</span> emphasis/bold:
+                    </code></pre><p>with <strong>asterisks</strong> or
+                    <strong>underscores</strong></p>
+                    <pre><code><span class="hljs-keyword">And</span> combinded:
+                    **asterisks <span class="hljs-keyword">and</span> _underscores_**.
+                    </code></pre><p>And combinded:
+                    <strong>asterisks and <em>underscores</em></strong>.</p>
+                    <pre><code><span class="hljs-string">Strikethrough:</span>
+
+                    ~Scratch <span class="hljs-keyword">this</span>~ (single ~)
+                    </code></pre><p>Strikethrough:</p>
+                    <p>~Scratch this~ (single ~)</p>
+                    <h3 id="lists">Lists</h3>
+                    <pre><code>Ordered lists use numbers
+                    <span class="hljs-number">1.</span> <span class="hljs-built_in">words</span>
+                    <span class="hljs-number">2.</span> <span class="hljs-built_in">words</span>
+                    <span class="hljs-number">3.</span> <span class="hljs-built_in">words</span>
+                    </code></pre><ol>
+                    <li>words</li>
+                    <li>words</li>
+                    <li>words</li>
+                    </ol>
+                    <pre><code>Unordered list can use
+                    <span class="hljs-bullet">* </span>asterisks
+                    <span class="hljs-bullet">- </span>Minuses
+                    <span class="hljs-bullet">+ </span>Pluses
+                    </code></pre><ul>
+                    <li>asterisks</li>
+                    <li>Minuses</li>
+                    <li>Pluses</li>
+                    </ul>
+                    <h2 id="links">Links</h2>
+                    <pre><code>[<span class="hljs-string">Inline to Google</span>](<span class="hljs-link">www.google.com</span>)
+                    </code></pre><p><a href="www.google.com">Inline to Google</a></p>
+                    <pre><code>[<span class="hljs-string">Link reference for Google</span>][<span class="hljs-symbol">you can write anything here</span>]
+
+                    [<span class="hljs-symbol">you can write anything here</span>]: <span class="hljs-link">www.google.com</span>
+                    </code></pre><p><a href="www.google.com">Link reference for Google</a></p>
+                    <pre><code><span class="hljs-selector-tag">Link</span> <span class="hljs-selector-tag">the</span> <span class="hljs-selector-tag">text</span> <span class="hljs-selector-attr">[to Google]</span>
+
+                    <span class="hljs-selector-attr">[to Google]</span>: <span class="hljs-selector-tag">www</span><span class="hljs-selector-class">.google</span><span class="hljs-selector-class">.com</span>
+                    </code></pre><p>Link the text <a href="www.google.com">to Google</a></p>
+                    <pre><code>Use just the hyper link: www<span class="hljs-selector-class">.google</span><span class="hljs-selector-class">.com</span>
+                    </code></pre><p>Use just the hyper link: www.google.com</p>
+                    <pre><code>[<span class="hljs-string">Reference your links to Google</span>][<span class="hljs-symbol">1</span>]
+
+                    [<span class="hljs-symbol">1</span>]: <span class="hljs-link">www.google.com</span>
+                    </code></pre><p><a href="www.google.com">Reference your links to Google</a></p>
+                    <h3 id="images">Images</h3>
+                    <pre><code>Inline: ![<span class="hljs-string">alt text</span>](<span class="hljs-link">https://picsum.photos/id/237/200/300</span>)
+                    </code></pre><p>Inline: <img src="https://picsum.photos/id/237/200/300" alt="alt text"></p>
+                    <pre><code>Referenced: ![<span class="hljs-string">alt text</span>][<span class="hljs-symbol">put any text here</span>]
+
+                    [<span class="hljs-symbol">put any text here</span>]: <span class="hljs-link">https://picsum.photos/id/237/200/300</span>
+                    </code></pre><p>Referenced: <img src="https://picsum.photos/id/237/200/300" alt="alt text"></p>
+                    <h3 id="blocking-code">Blocking Code</h3>
+                    <pre><code>Here is <span class="hljs-keyword">inline</span> <span class="hljs-keyword">code</span> blocking using ``: `df = pd.read_csv(<span class="hljs-string">'filepath.csv'</span>)`
+                    </code></pre><p>Here is inline code blocking using <code>`:</code>df = pd.read_csv(&#39;filepath.csv&#39;)`</p>
+                    <pre><code>Longer block quotes use <span class="hljs-number">3</span> sets <span class="hljs-keyword">of</span> `` :
+
+                    ```<span class="hljs-built_in">folder</span> = <span class="hljs-string">'../data_csv/'</span>
+                    filelist = [<span class="hljs-built_in">file</span> <span class="hljs-keyword">for</span> <span class="hljs-built_in">file</span> <span class="hljs-keyword">in</span> os.listdir(<span class="hljs-built_in">folder</span>)
+                    <span class="hljs-keyword">if</span> <span class="hljs-built_in">file</span>.endswith(<span class="hljs-string">'.csv'</span>)]
+                    </code></pre><pre><code>
+                    Longer block quotes <span class="hljs-keyword">use</span> <span class="hljs-number">3</span> <span class="hljs-keyword">sets</span> <span class="hljs-keyword">of</span> <span class="hljs-string">``</span> :
+                    </code></pre><p>folder = &#39;../data_csv/&#39;
+                    filelist = [file for file in os.listdir(folder)
+                    if file.endswith(&#39;.csv&#39;)</p>
+
+
+                    <h3 id="blocking-code">Blocking Quotes:</h3><pre><code>
+                    <p>>Block quotes by adding the &#39;&gt;&#39; symbol</p>
+                    </code></pre>
+                    <blockquote>
+                    <p>Block quotes by adding the &#39;&gt;&#39; symbol</p>
+                    </blockquote>
+                    <pre><code><span class="hljs-quote">&gt; Multiple</span>
+                    <span class="hljs-quote">&gt;
+                    &gt; Lines</span>
+                    </code></pre><blockquote>
+                    <p>Multiple</p>
+                    <p>Lines</p>
+                    </blockquote>
+                    <pre><code><span class="hljs-quote">&gt; Nested</span>
+                    <span class="hljs-quote">&gt;
+                    &gt;&gt; Lines</span>
+                    </code></pre><blockquote>
+                    <p>Nested</p>
+                    <blockquote>
+                    <p>Lines</p>
+                    </blockquote>
+                    </blockquote>
+                    <h3 id="horizontal-lines-3-or-more-of-stars-dashes-or-underscore-_">Horizontal lines: 3 or more of stars: * dashes: - or underscore: _</h3>
+                    <pre><code><span class="hljs-emphasis">***</span>
+                    </code></pre><hr>
+                    <pre><code><span class="hljs-meta">---</span>
+                    </code></pre><hr>
+                    <pre><code>___
+                    </code></pre><hr>
+                    <h3 id="making-a-table-using-dashes-">Making a table using dashes:</h3>
+                    <pre><code>|<span class="hljs-string"> Syntax </span>|<span class="hljs-string"> Description </span>|
+                    |<span class="hljs-string"> ----------- </span>|<span class="hljs-string"> ----------- </span>|
+                    |<span class="hljs-string"> Header </span>|<span class="hljs-string"> Title </span>|
+                    |<span class="hljs-string"> Paragraph </span>|<span class="hljs-string"> Text </span>|
+                    </code></pre><table>
+                    <thead>
+                    <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Header</td>
+                    <td>Title</td>
+                    </tr>
+                    <tr>
+                    <td>Paragraph</td>
+                    <td>Text</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+            <p></p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
+    

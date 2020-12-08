@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- links -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center">
+            <h1>Tips and Tutorials</h1>
+            <p>EDA and Programming with Caly</p>
+        </div>
+    </header>
+    <!-- Control buttons -->
+    <section id="blog" class="blog section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="blog-fltrs" style="list-style-type:none;">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-programming">Programming</li>
+                    <li data-filter=".filter-eda">EDA</li>
+                    <li data-filter=".filter-cheatsheet">Cheatsheets</li>
+                    <li data-filter=".filter-tips">Tips</li>
+                    <!-- <li data-filter=".filter-sql">SQL</li>  -->
+                    <!-- <li data-filter=".filter-excel">Excel</li>  -->
+                    <!-- <li><input class="form-control" id="myInput" type="text" placeholder="Search..."></li> -->
+                </ul>
+            </div>
+        </div>
+                <div class="col-sm-6 blog-container">
+                <ul class="list-group" id="myList" style="list-style-type:none;">
+                    <li class="blog-item filter-cheatsheet"><h3><a href="./posts/markdown.html">Markdown Cheatsheet</a></h3><p>Add bullets, cite sources, make tables, and more.</p></li>
+                    <li class="blog-item filter-tips"><h3><a href="./posts/cool_datasets.html">Interesting Datasets</a></h3><p>Direct links to website and repositories with easy to download datasets.</p></li>
+                    <li class="blog-item filter-eda"><h3><a href="./posts/seaborn_graphs_basics.html">Seaborn Basics</a></h3><p>Basic graphs, adding lables, changing tick marks.</p></li>
+                </ul>
+                </div>
+                <div class="col-sm-6 blog-container">
+                <ul class="list-group" id="myList" style="list-style-type:none;">
+                    <!-- <li><h3><a href="./posts/streamlit.html">Streamlit Basics</a></h3></li> -->
+                    <li class="blog-item filter-programming"><h3><a href="./posts/flask_start.html">Flask Basics</a></h3><p>The basic first steps to creating a Flask App.</p></li>
+                    <li class="blog-item filter-tips"><h3><a href="./posts/virtual_env.html">Virtual Environment Basics</a></h3><p>Making a virtual environment, with easy step-by-step instructions.</p></li>
+                    <li class="blog-item filter-tips"><h3><a href="./posts/vs_code.html">VS Code Tricks</a></h3><p>Useful VS code tricks to be more productive.</p></li>
+                    <li class="blog-item filter-tips"><h3><a href="./posts/web_dev.html">Starting Web Development</a></h3><p>Resources for developing websites.</p></li>  
+                </ul>
+                </div>
+    </div>
+    </section>
+</body>
+</html>

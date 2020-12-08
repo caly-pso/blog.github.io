@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- links -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js"></script>
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            <h4>Caly's Blog</h4>
+            <br><br>
+            <input type="button" value="back" onclick="history.back()"/> 
+            <br>
+            </div>
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-9">
+                <h2>Seaborn Graph Basics</h2>
+                <h5>Quick guides for Seaborn.</h5>
+                <h5>Dec, 2020</h5>
+                <!-- <div class="fakeimg">Fake Image</div> -->
+                <article>
+                    <h3>Adding Axis Lables</h3>
+<pre><code>plt.rcParams['figure.dpi'] = 360
+sns.set(style="whitegrid")fig, ax = plt.subplots(figsize=(12,4))
+sns.barplot(data=data, x="severity", y="freq", palette=['#eb3434', '#eb7a34', '#ebae34'])
+plt.xlabel('')
+plt.ylabel('Number of Accidents', size=18, color='#4f4e4e')
+plt.title('Number of Accidents By Severity', size=18, color='#4f4e4e')
+    plt.xticks(size=14, color='#4f4e4e')
+    plt.yticks(size=14, color='#4f4e4e')
+    plt.text(x=1, y=48, s='Most accidents were low severity', 
+        color='#4f4e4e', fontsize=12, horizontalalignment='center')
+    plt.text(x=0, y=2, s="10", 
+        color='white', fontsize=18, horizontalalignment='center')
+    plt.text(x=1, y=2, s="25", 
+        color='white', fontsize=18, horizontalalignment='center')
+    plt.text(x=2, y=2, s="50", 
+        color='white', fontsize=18, horizontalalignment='center')
+    sns.despine(left=True);</code></pre>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+            <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
+    

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- links -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js"></script>
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            <h4>Caly's Blog</h4>
+            <br><br>
+            <input type="button" value="back" onclick="history.back()"/> 
+            <br>
+            </div>
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-9">
+                <h2>Starting a Flask App</h2>
+                <h5>Step by step instructions to start your Flask app.</h5>
+                <h5>Dec, 2020</h5>
+                <!-- <div class="fakeimg">Fake Image</div> -->
+                <article>
+                    <h3 id="making-the-virtual-environment-in-terminal">Making the Virtual Environment in Terminal:</h3>
+<pre><code><p>$ python3 -m venv my_environment
+$ source my_environment/bin/activate
+$ pip3 install flask</p></code></pre>
+                    <h3 id="once-the-environment-is-created-create-python-file-and-save-it-as-apppy-your-first-few-lines-of-code-should-be">Once the environment is created, create python file, and save it as app.py. Your first few lines of code should be:</h3>
+<pre><code><p>from flask import Flask</p>
+<p>app = Flask(<strong>name</strong>)</p>
+<p>@app.route("/")
+def home():
+    return "Hello, Flask!"</p></code></pre>
+                    <h3 id="once-the-file-is-saved-and-you-have-added-htmlcss-if-desired-run">Once the file is saved, and you have added HTML/CSS if desired, run:</h3>
+<pre><code><p>$ export FLASK_APP=app.py
+$ flask run</p></code></pre>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+            <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
+    
+
