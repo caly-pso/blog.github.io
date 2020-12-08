@@ -1,0 +1,78 @@
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 70em}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+input {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+body{
+    background-color: #fff;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+article{
+    background-color: #fff;
+    height: auto;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height: auto;} 
+}
+
+/* filter */
+.blog #blog-fltrs {
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.blog #blog-fltrs li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #5f82da;
+    margin-bottom: 5px;
+}
+
+.blog #blog-fltrs li:hover, .blog #blog-fltrs li.filter-active {
+    color: #284386;
+}
+
