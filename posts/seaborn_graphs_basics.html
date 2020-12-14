@@ -50,6 +50,31 @@ plt.title('Number of Accidents By Severity', size=18, color='#4f4e4e')
         color='white', fontsize=18, horizontalalignment='center')
     sns.despine(left=True);</code></pre>
                 </article>
+                <article>
+                    <h3>Creating Subplots</h3>
+<pre><code>fig,ax=plt.subplots(2,3,figsize=(30,20))
+order = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+fifteen = df_year[2015]
+a = sns.countplot(ax=ax[0,0], x='day', data=fifteen, order=order)
+
+sixteen = df_year[2016]
+b = sns.countplot(ax=ax[0,1], x='day', data=sixteen, order=order)
+
+seventeen = df_year[2017]
+c = sns.countplot(ax=ax[0,2], x='day', data=seventeen, order=order)
+
+eighteen = df_year[2018]
+d = sns.countplot(ax=ax[1,0], x='day', data=eighteen, order=order)
+
+nineteen = df_year[2019]
+e = sns.countplot(ax=ax[1,1], x='day', data=nineteen, order=order)
+
+twenty = df_year[2020]
+f = sns.countplot(ax=ax[1,2], x='day', data=twenty, order=order)</code></pre>
+                <p>Out:
+                    <br><img src="../assets/img/x.png" alt="" style="width:90%;"></p>
+                </article>
             </div>
         </div>
     </div>
