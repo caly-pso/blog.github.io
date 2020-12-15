@@ -19,7 +19,9 @@
             <div class="col-sm-2 sidenav">
             <h4>Caly's Blog</h4>
             <br><br>
-            <input type="button" value="back" onclick="history.back()"/> 
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="../index.html"><h5>BACK</h5></a></li>
+            </ul>
             <br>
             </div>
 
@@ -27,16 +29,29 @@
 
             <div class="col-sm-9">
                 <h2>Streamlit Basics</h2>
-                <h5>Title description</h5>
-                <h5>Coming Soon</h5>
+                <h5>How to create a Streamlit web application.</h5>
+                <h5>Dec, 2020</h5>
                 <!-- <div class="fakeimg">Fake Image</div> -->
                 <article>
-                    <!-- <h2 class="section-heading">The Final Frontier</h2>
-                    
+                    <h3>Creating and Loading a dataframe:</h3>
+<pre><code># creating dataframe
+@st.cache
+def load_data():
+    data = pd.read_csv('data/crime_data.csv')
+    return data
 
-                    <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p> -->
+# load data and cache it using Streamlit cache
+crime_data = load_data()</code></pre>
+                </article>
+                <article>
+                    <h3>Sidebar:</h3>
+<pre><code>st.sidebar.title("Crime")
+select = st.sidebar.selectbox('Year', [2015,2016,2017,2018,2019,2020], key='1')</code></pre>
+                </article>
+                <article>
+                <h3>Images:</h3>
+<pre><code>image = Image.open('./img/denver.jpg')
+st.image(image, caption='Denver, Colorado', use_column_width=True)</code></pre>
                 </article>
             </div>
         </div>
