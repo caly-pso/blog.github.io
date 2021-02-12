@@ -1,7 +1,7 @@
 ![banner](/assets/img/header.png)
 <br>
 ## My personal blog of coding notes. 
-Feel free to explore the site!
+#### Feel free to explore the site: https://caly-pso.github.io/blog.github.io/
 <br>
 <br>
 
